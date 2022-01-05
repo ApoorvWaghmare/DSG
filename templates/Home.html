@@ -1,0 +1,75 @@
+<html>
+
+<body>
+	<div class="header">
+		<h2>DSGit</h2>
+	</div>
+	<div class="project-list">
+	<ol>
+      {%for i in range(0, num_names)%}
+  
+        <li> 
+          <span>
+            {{ names[i] }}
+          </span>
+        </li>
+  
+      {%endfor%}
+    </ol>
+	</div>
+
+	<div class="experiments">
+
+	</div>
+
+	<div class="footer">
+
+	</div>
+
+
+</body>
+
+</html>
+
+<style>
+.header {
+position: absolute;
+width: 100%;
+height: 10%;
+left: 0px;
+top: 0px;
+
+background: #8D8AF4;
+}
+
+.project-list {
+position: absolute;
+width: 20%;
+height: 80%;
+left: 0px;
+top: 10%;
+
+background: rgba(242, 234, 165, 0.81);
+}
+
+.experiments {
+position: absolute;
+width: 80%;
+height: 80%;
+left: 20%;
+top: 10%;
+
+background: #F2EAA5;
+}
+
+.footer {
+position: absolute;
+width: 100%;
+height: 10%;
+left: 0px;
+top: 90%;
+
+background: #8D8AF4;
+}
+
+</style>

@@ -1,0 +1,13 @@
+{
+    "model_type": "image_segmentation",
+    "model_architecture": "u-net",
+    "custom_loss": "weighted_bce",
+    "custom_loss_beta": 12,
+    "optimizer": "adam",
+    "callback_monitor": "val_loss",
+    "callback_mode": "min",
+    "callback_save_best_only": true,
+    "epochs": 12,
+    "steps_per_epoch": 6503,
+    "shuffle": true
+}

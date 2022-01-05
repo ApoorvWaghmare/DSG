@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Tree view from unordered list</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+  <body>
+  <!-- partial:index.partial.html -->
+
+  <ul class = "tree">
+
+    <ol>
+      {%for i in range(0, num_projects)%}
+  
+        <li> 
+          <span>
+            {{ projects[i]["name"], projects[i]["description"], projects[i]["id"] }}
+          </span>
+        </li>
+  
+      {%endfor%}
+    </ol>
+
+  </ul>
+    
+  </body>
+</html>
